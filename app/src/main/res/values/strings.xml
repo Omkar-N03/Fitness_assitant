@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Fitness Assistant</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_exercises">Exercises</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Common -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_log_workout">Log Workout</string>
+    <string name="action_watch_video">Watch Video Tutorial</string>
+    <string name="action_take_photo">Capture Progress Photo</string>
+    <string name="action_record_weight">Record Weight</string>
+    <string name="action_log_weight">Log Current Weight</string>
+    <string name="hint_current_weight">Current Weight (kg)</string>
+    <string name="label_sets">Sets</string>
+    <string name="label_reps">Reps per set</string>
+    <string name="label_weight">Weight (kg)</string>
+
+    <!-- BMI -->
+    <string name="bmi_underweight">Underweight</string>
+    <string name="bmi_normal">Normal Weight</string>
+    <string name="bmi_overweight">Overweight</string>
+    <string name="bmi_obese">Obese</string>
+
+    <!-- Empty States -->
+    <string name="empty_recent_workouts">No workouts recorded yet. Start lifting and log your first workout!</string>
+    <string name="empty_exercises_found">No exercises matching your filter.</string>
+    <string name="empty_progress_photos">No progress photos taken yet. Snap a photo to track your physical transformation!</string>
+    <string name="empty_weight_history">No weight logs recorded yet.</string>
+</resources>

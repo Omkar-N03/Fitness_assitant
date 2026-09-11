@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Assistant",
+  "description": "Production-ready Gym Fitness Assistant with SQLite database, CSV exercise library, workout logger, BMI calculator, and progress photo tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

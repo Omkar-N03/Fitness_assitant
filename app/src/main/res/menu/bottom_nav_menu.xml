@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:title="@string/nav_dashboard" />
+
+    <item
+        android:id="@+id/nav_exercises"
+        android:icon="@drawable/ic_fitness_center"
+        android:title="@string/nav_exercises" />
+
+    <item
+        android:id="@+id/nav_progress"
+        android:icon="@drawable/ic_trending_up"
+        android:title="@string/nav_progress" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_profile" />
+</menu>

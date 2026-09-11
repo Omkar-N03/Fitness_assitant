@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-45">
+        <!-- Dumbbell Bar -->
+        <path
+            android:fillColor="#E2E8F0"
+            android:pathData="M34,51h40v6h-40z" />
+
+        <!-- Knurling texture on bar -->
+        <path
+            android:fillColor="#94A3B8"
+            android:pathData="M49,51h10v6h-10z" />
+
+        <!-- Left inner plate -->
+        <path
+            android:fillColor="#FF5722"
+            android:pathData="M30,38h5v32h-5z" />
+        <!-- Left outer big plate -->
+        <path
+            android:fillColor="#FF7043"
+            android:pathData="M24,34h6v40h-6z" />
+        <!-- Left collar -->
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M35,46h3v16h-3z" />
+        <!-- Left weight tip -->
+        <path
+            android:fillColor="#E64A19"
+            android:pathData="M21,42h3v24h-3z" />
+
+        <!-- Right inner plate -->
+        <path
+            android:fillColor="#FF5722"
+            android:pathData="M73,38h5v32h-5z" />
+        <!-- Right outer big plate -->
+        <path
+            android:fillColor="#FF7043"
+            android:pathData="M78,34h6v40h-6z" />
+        <!-- Right collar -->
+        <path
+            android:fillColor="#CBD5E1"
+            android:pathData="M70,46h3v16h-3z" />
+        <!-- Right weight tip -->
+        <path
+            android:fillColor="#E64A19"
+            android:pathData="M84,42h3v24h-3z" />
+
+        <!-- Lightning streak / power spark accent -->
+        <path
+            android:fillColor="#FFD54F"
+            android:pathData="M52,43l-3,8h5l-2,8 6,-10h-5z" />
+    </group>
+</vector>
