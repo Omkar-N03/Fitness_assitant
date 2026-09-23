@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/surface_card"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/surface_border"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Row: Title + Exact Badge + Difficulty -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvExerciseTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                tools:text="Barbell Bench Press" />
+
+            <!-- Exact Video Match Badge -->
+            <TextView
+                android:id="@+id/tvExactBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_badge_exact"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:text="★ EXACT"
+                android:textColor="@color/exact_badge_text"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <!-- Difficulty Chip -->
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp"
+                android:clickable="false"
+                app:chipCornerRadius="12dp"
+                app:chipStrokeWidth="0dp"
+                tools:text="Intermediate" />
+
+            <!-- Favorite Toggle Icon Button -->
+            <ImageButton
+                android:id="@+id/ibFavorite"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Like exercise and add to split"
+                android:padding="6dp"
+                android:src="@drawable/ic_favorite_border"
+                app:tint="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Metadata Pills Row: Body Part, Equipment, Rating -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Body Part Pill -->
+            <TextView
+                android:id="@+id/tvBodyPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pill_badge_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="Chest" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="1dp" />
+
+            <!-- Equipment Pill -->
+            <TextView
+                android:id="@+id/tvEquipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pill_neutral_badge_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                tools:text="Barbell" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="1dp" />
+
+            <!-- Type Pill -->
+            <TextView
+                android:id="@+id/tvExerciseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pill_neutral_badge_bg"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                tools:text="Strength" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Rating Pill -->
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_trophy"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/bmi_underweight_color"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="4.9" />
+        </LinearLayout>
+
+        <!-- Exercise Description Preview -->
+        <TextView
+            android:id="@+id/tvExerciseDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            tools:text="Barbell Bench Press exercise targeting chest. Use controlled form and suitable resistance for intermediate level." />
+
+        <!-- Direct YouTube Video Action Bar -->
+        <LinearLayout
+            android:id="@+id/layoutPlayVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_video_strip"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Red Play Button Icon -->
+            <ImageView
+                android:id="@+id/ivPlayVideo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Play YouTube Video"
+                android:src="@drawable/ic_play_circle"
+                app:tint="@color/youtube_red" />
+
+            <!-- Video Title & Channel -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvVideoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="Barbell Bench Press | Usman Ali Fitness" />
+
+                <TextView
+                    android:id="@+id/tvVideoSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_muted"
+                    android:textSize="11sp"
+                    tools:text="YouTube • Tap to watch form tutorial" />
+            </LinearLayout>
+
+            <!-- Watch Badge Action -->
+            <TextView
+                android:id="@+id/tvWatchAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pill_badge_bg"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Watch"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,6 @@
+{
+  "name": "Fitness Assistant",
+  "description": "Clean, user-friendly fitness companion to log workout splits and exercises, track body weight progress, monitor BMI, and view exercise video demonstrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

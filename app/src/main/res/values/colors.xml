@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Elegant Dark Theme Base Palette -->
+    <color name="bg_dark">#111318</color>
+    <color name="surface_dark">#1D2024</color>
+    <color name="surface_card">#282A2F</color>
+    <color name="surface_item">#1C1B1F</color>
+    <color name="surface_border">#333539</color>
+    <color name="surface_variant">#404752</color>
+    <color name="surface">#1D2024</color>
+    <color name="outline_variant">#44474E</color>
+
+    <!-- Brand Primary -->
+    <color name="primary">#D1E4FF</color>
+    <color name="on_primary">#00315E</color>
+    <color name="primary_container">#004A77</color>
+    <color name="on_primary_container">#D1E4FF</color>
+
+    <!-- Secondary & Supporting -->
+    <color name="secondary">#C4C6D0</color>
+    <color name="on_secondary">#2E3036</color>
+    <color name="secondary_container">#3A4355</color>
+    <color name="on_secondary_container">#DCE2F9</color>
+
+    <!-- Text hierarchy -->
+    <color name="text_primary">#E2E2E6</color>
+    <color name="text_secondary">#909094</color>
+    <color name="text_muted">#6B7280</color>
+
+    <!-- BMI and Indicator Semantics -->
+    <color name="tertiary_color">#B0F4B1</color>
+    <color name="bmi_underweight_color">#FBBC04</color>
+    <color name="bmi_normal_color">#B0F4B1</color>
+    <color name="bmi_overweight_color">#FF8A65</color>
+    <color name="bmi_obese_color">#EA4335</color>
+    <color name="indicator_track">#44474E</color>
+
+    <!-- Bottom Nav & Action Accents -->
+    <color name="nav_active_pill">#004A77</color>
+    <color name="nav_active_icon">#D1E4FF</color>
+    <color name="nav_inactive_icon">#909094</color>
+    <color name="fab_bg">#D1E4FF</color>
+    <color name="fab_icon">#00315E</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="youtube_red">#FF0000</color>
+    <color name="exact_badge_bg">#2E2700</color>
+    <color name="exact_badge_border">#FFD54F</color>
+    <color name="exact_badge_text">#FFE082</color>
+</resources>
